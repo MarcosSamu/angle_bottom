@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Barras</title>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  </head>
+  <style type="text/css">
+  	*{margin:0;padding:0}
+
+
+.barras{
+	transition: 2s all;
+	  transition-delay: 3s;
+
+
+}
+
+.barras .icon i{
+  position:relative;
+  display:block;
+  left:30%;
+  bottom:-200px;
+  font-size:60px;
+  padding:0px;
+  margin:0;
+  animation: anima ease;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    cursor: pointer;
+ }
+
+ @keyframes anima{
+ 	  from {margin-top: -100px;}
+     to {margin-bottom: 200px;opacity: calc(1 - .8)}
+ }
+
+  </style>
+  <body>
+    <div class="barras">
+      <div class="icon">
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+  </body>
+</html>
